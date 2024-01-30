@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active:
+      - prof4
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        - prof1
+        - prof2
+server:
+  port: 8080
+
+my:
+  top:
+    mapping: foo
+---
+
+spring:
+  config:
+    activate:
+      on-profile:
+        - prof3
+        - prof4
+server:
+  port: 8081
+my:
+  top:
+    mapping: bar
