@@ -1,0 +1,6 @@
+###prof3/4: port = 8081, top mapping = /bar
+GET http://127.0.0.1:8081/bar/test1
+
+
+###prof1/2: port = 8080, top mapping = /foo
+GET http://127.0.0.1:8080/foo/test1

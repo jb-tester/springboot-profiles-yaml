@@ -1,8 +1,9 @@
 spring:
   profiles:
     active:
-      - prof4
+      - prof2
 ---
+
 spring:
   config:
     activate:
@@ -20,9 +21,7 @@ my:
 spring:
   config:
     activate:
-      on-profile:
-        - prof3
-        - prof4
+      on-profile: prof3, prof4
 server:
   port: 8081
 my:
